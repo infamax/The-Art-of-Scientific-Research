@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{a4wide}\title{Industrial project description: Recognition of Russian Sign Language}
+%\author{not specified}
+\date{}
+\begin{document}
+\maketitle
+
+%\begin{abstract}
+Answer the question to outline your project. Choose one of the roles: an {Expert} or an~\textbf{Analyst}. \textbf{Role:} Expert
+%\end{abstract}
+% \paragraph{Keywords:} The Art On Scientific Research, Abstract Reconstruction, Please Put Yours 
+
+
+\section{Planning the industrial research project}
+Before planning the research, the analyst and (\textbf{expert}) discuss the key issues. After the long dash~--- our remarks.
+
+\begin{enumerate}
+\item \textbf{Goal of the project:} The model translating from Russian Sign Language into Russian
+\item \textbf{Applied problem solved in the project:} The result is to allow people who are deaf or hard of hearing to communicate with others using sign language.
+Many Deaf smartphone users can fingerspell words faster than they can type on mobile keyboards. The model will help 
+such people communicate more comfortably with others
+\item \textbf{Description of historical measured data:} The data is a set of fullhd quality video files. 
+Marked photographs with signs are also needed, what each sign means. 
+\item \textbf{Quality criteria:} Levenshtein distance will be used as a quality metric. This metric shows the difference between two sequences.
+\item \textbf{Project feasibility:} To begin with, as part of the PoC (Proof of concept), a model for recognizing individual signs 
+will be implemented. If individual signs are successfully recognized, you can move on to recognizing entire sentences. 
+\item \textbf{Conditions necessary for successful project implementation:} The model needs high resolution video. 
+Poor video quality can dramatically reduce the quality of recognized signs. Important feature of Russian sign language is the presence of many dialects.
+When creating a dataset, this must be taken into account and filled with representatives of different dialects. 
+\item \textbf{Solution methods:} Yolo architecture may be used as baseline. Image Super-Resolution models should also be explored. Combined of Yolo architecture 
+and Image Super-Resolution models can work this task. 
+\end{enumerate}
+
+\section{Research or development?}
+In other words, novelty or technological advancement?
+
+{Analyst:} What impact will the research have on the field of knowledge? How useful will it be?
+
+{Expert:} (\textbf{How long will the model be used? What will replace it in the future?})
+
+%\bibliographystyle{unsrt}
+%\bibliography{Name-theArt}
+\end{document}
